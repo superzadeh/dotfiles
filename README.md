@@ -7,6 +7,8 @@ Configure Bash (on ubuntu on Windows) for web development using VIM.
 ## How to use 
 
 ```sh
+sudo apt-get isntall zsh
+zsh
 # Get the dotfiles
 git clone http://github/superzadeh/dotfiles
 cd dotfiles
