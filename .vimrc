@@ -14,6 +14,10 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'wincent/command-t' " requires Ruby support in Vim
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" Source Control
+Plugin 'tpope/vim-fugitive'
+Plugin 'lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}
+
 " JavaScript development
 Plugin 'pangloss/vim-javascript'
 Plugin 'Valloric/YouCompleteMe'
@@ -123,6 +127,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Set line numbering
+set nu
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -158,3 +165,5 @@ set noswapfile
 " => JavaScript development
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:javascript_plugin_jsdoc = 1
+set foldmethod=indent
+set foldlevel=99
