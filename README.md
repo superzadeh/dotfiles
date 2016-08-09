@@ -2,7 +2,7 @@
 
 ## What does it do
 
-Configure Bash (on ubuntu on Windows) for web development using VIM.
+Configure Bash (on Ubuntu on Windows) for web development using VIM.
 
 ## How to use 
 
