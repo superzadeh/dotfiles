@@ -1,6 +1,6 @@
 # DotFiles
 
-## What does it do
+## What it does
 
 Configure Bash (on Ubuntu on Windows) for web development using VIM.
 
