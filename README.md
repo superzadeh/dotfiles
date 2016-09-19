@@ -8,6 +8,7 @@ Configure Bash (on Ubuntu on Windows) for web development using VIM.
 
 ```sh
 sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 zsh
 # Get the dotfiles
 git clone http://github/superzadeh/dotfiles
