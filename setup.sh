@@ -15,7 +15,7 @@ else
     # Git Configuration
     # -------------------------------------
     git config --global user.email = "superzadeh@outlook.com"
-    git config --global user.name = "superzadeh
+    git config --global user.name = "superzadeh"
     git config --global push.default simple
     
     # -------------------------------------
