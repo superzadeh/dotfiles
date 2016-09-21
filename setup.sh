@@ -7,7 +7,7 @@ sudo apt-get -y install ssh zsh nodejs build-essential git
 if [[ -f .doom_install.tmp ]]; then
 # After marshmallow is installed, the chip is rebooted. 
 # This is when Doom is installed.
-    cd /home/chip/dotfiles
+    cd $HOME/dotfiles
      chmod +x ./doom-setup.sh
     ./doom-setup.sh
     rm -f .doom_install.tmp
@@ -24,7 +24,7 @@ else
     # -------------------------------------
     # Get the dotfiles
     git clone http://github/superzadeh/dotfiles
-    cd /home/chip/dotfiles
+    cd $HOME/dotfiles
     chmod +x ./bootstrap.sh
     ./bootstrap.sh
     # Get Vundle
@@ -35,14 +35,14 @@ else
     # -------------------------------------
     # Install Mednafen
     # -------------------------------------
-    cd /home/chip/dotfiles
+    cd $HOME/dotfiles
     chmod +x ./madfen-setup.sh
     ./madfen-setup.sh
     
     # -------------------------------------
     # Start Marshmallow's Pocket Home installation, thanks to https://gist.github.com/kevinkn/52a8fb5d670bfa40c766e5fb3c2a0696
     # -------------------------------------
-    cd /home/chip/dotfiles
+    cd $HOME/dotfiles
     chmod +x ./marsh-setup.sh
     ./marsh-setup.sh
     echo "Rebooting now. You will need to rerun the script to finish the Installation."
