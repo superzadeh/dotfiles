@@ -10,6 +10,7 @@ Install all you need on a brand new PocketCHIP:
 - DWB (web-kit browser)
 - Mednafen (emulator)
 - ZSH & oh-my-zsh (with the theme [Nodeys](https://github.com/marszall87/nodeys-zsh-theme))
+- Configure Git with my Username and Email (todo: add a prompt to let people change that)
 
 ## How to use 
 
