@@ -1,7 +1,7 @@
 # -------------------------------------
 # Install Mednafen
 # -------------------------------------
-sudo apt-get install mednafen libsdl2-dev
+sudo apt-get install mednafen libsdl2-dev -y
 # Run the app once to allow it to create its config
 timeout 15s mednafen
 sed -i 's/video.driver opengl/video.driver sdl/g' /home/chip/.mednafen/mednafen-09x.cfg
@@ -43,7 +43,7 @@ cd roms
 mkdir gba
 mkdir gbc
 wget -O fileName.gba http://linkToFile.gba
-sudo apt-get install zenity
+sudo apt-get install zenity -y
 cd
 wget -O medGui.sh https://gist.githubusercontent.com/superzadeh/66bf8b9066b985e7ddcc90315f5eb9b6/raw/456aff9cd524746d17c09cfd58f7db92f7afc216/medGui.sh
 chmod +x medGui.sh
