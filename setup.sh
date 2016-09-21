@@ -45,4 +45,7 @@ else
     cd /home/chip/dotfiles
     chmod +x ./marsh-setup.sh
     ./marsh-setup.sh
+    echo "Rebooting now. You will need to rerun the script to finish the Installation."
+    touch .doom_install.tmp
+    reboot
 fi
