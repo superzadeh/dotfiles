@@ -1,7 +1,7 @@
 # -------------------------------------
 # Install Mednafen
 # -------------------------------------
-sudo apt-get install mednafen libsdl2-dev -y
+sudo apt-get -y install mednafen libsdl2-dev
 # Run the app once to allow it to create its config
 timeout 15s mednafen
 sed -i 's/video.driver opengl/video.driver sdl/g' /home/chip/.mednafen/mednafen-09x.cfg
