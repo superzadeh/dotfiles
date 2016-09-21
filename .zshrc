@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/chip/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,3 +85,5 @@ source $ZSH/oh-my-zsh.sh
 #
 alias cls=clear
 alias gl="git log --oneline --all --graph --decorate"
+alias gs="git status"
+alias la="ls -la"
