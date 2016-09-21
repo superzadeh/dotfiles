@@ -31,6 +31,10 @@ else
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     # Start VIM and install plugins
     vim +PluginInstall +qall
+    # Fix keymapping for "minus" and "plus" in zsh
+    sed -i 's/keycode 82 = KP_Subtract underscore F11 KP_Subtract/keycode 82 = minus underscore F11 minus/g'  $HOME/.Xmodmap
+    sed -i 's/keycode 86 = KP_Add KP_Equal F12 KP_Add/keycode 86 = plus equal F12 plus/g' $HOME/.Xmodmap
+    xmodmap $HOME/.Xmodmap
     
     # -------------------------------------
     # Install Mednafen
