@@ -1,5 +1,5 @@
     echo "Installing DOOM..."
-    sudo apt install prboom doom-wad-shareware -q4 -y
+    sudo apt-get install prboom doom-wad-shareware -q4 -y
     echo "Making sure we are in the right place:"
     cd /home/chip
     wget  -O Doom.png http://icons.iconarchive.com/icons/3xhumed/mega-games-pack-26/256/Doom-1-icon.png
