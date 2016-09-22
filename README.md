@@ -18,8 +18,8 @@ Install all you need on a brand new PocketCHIP:
 sudo apt-get update
 sudo apt-get install git
 git clone https://github.com/superzadeh/dotfiles
-git checkout chip
 cd dotfiles
+git checkout chip
 ./setup.sh
 ```
 
