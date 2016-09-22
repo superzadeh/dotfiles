@@ -19,7 +19,6 @@ sudo apt-get update
 sudo apt-get install git
 git clone http://github/superzadeh/dotfiles
 cd dotfiles
-# Backup previous dotfiles and create symlinks to the dotfiles
 ./setup.sh
 ```
 
