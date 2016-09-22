@@ -27,6 +27,7 @@ I will add more logs and instructions in the scripts later.
 
 ## Todo
 
+- [ ] Rename madfen to mednafen :)
 - [ ] Remove the need to reboot
 - [ ] Allow users to choose their username/email for git
 - [ ] Automate VIM build with python and Ruby support
