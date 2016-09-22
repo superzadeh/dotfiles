@@ -11,7 +11,7 @@ sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 zsh
 # Get the dotfiles
-git clone http://github/superzadeh/dotfiles
+git clone http://github.com/superzadeh/dotfiles
 cd dotfiles
 # Backup previous dotfiles and create symlinks to the dotfiles
 ./bootstrap.sh
