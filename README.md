@@ -32,3 +32,4 @@ I will add more logs and instructions in the scripts later.
 - [ ] Automate VIM build with python and Ruby support
 - [ ] Add script to setup OpenTyrian
 - [ ] Automate the icons creation in the launcher using jq to manipulate the ~/pocket-home/config.json
+- [ ] Move git apt-get and clone inside the script, and change the instructions to simple wget/curl and run setup.sh
