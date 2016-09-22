@@ -17,7 +17,7 @@ Install all you need on a brand new PocketCHIP:
 ```sh
 sudo apt-get update
 sudo apt-get install git
-git clone http://github/superzadeh/dotfiles
+git clone http://github.com/superzadeh/dotfiles
 cd dotfiles
 ./setup.sh
 ```
