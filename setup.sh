@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get -y install ssh zsh nodejs build-essential git
+sudo apt-get -y install ssh zsh nodejs build-essential git xclip
 
 # -------------------------------------
 # Reboot management
