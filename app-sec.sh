@@ -13,4 +13,5 @@ cd $HOME
 mkdir app-sec
 cd $HOME/app-sec
 git clone https://github.com/moxie0/sslstrip
-python $HOME/app-sec/sslstrip/setup.py install
+cd sslstrip
+python setup.py install
