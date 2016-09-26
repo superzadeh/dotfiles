@@ -1,3 +1,4 @@
+#!/bin/bash
 # Enable Port forwarding
 sudo echo 1 > /proc/sys/net/ipv4/ip_forward
 
@@ -9,8 +10,7 @@ sudo pip install scapy argparse
 
 # Install SSL Strip
 cd $HOME
-let APPSEC = "app-sec"
-mkdir $APPSEC
-cd $HOME/$APPSEC
+mkdir app-sec
+cd $HOME/app-sec
 git clone https://github.com/moxie0/sslstrip
-python $HOME/$APPSEC/sslstrip/setup.py install
+python $HOME/app-sec/sslstrip/setup.py install
