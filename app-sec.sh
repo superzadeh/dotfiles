@@ -9,7 +9,7 @@ sudo pip install scapy argparse
 
 # Install SSL Strip
 cd $HOME
-APPSEC = ""
+APPSEC = "app-sec"
 mkdir $APPSEC
 cd $HOME/$APPSEC
 git clone https://github.com/moxie0/sslstrip
