@@ -1,7 +1,3 @@
-sudo apt-get bpython
+sudo apt-get bpython python python-dev python-pip
 cd $HOME
-mkdir python
-cd python
-wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
 sudo pip install scapy
