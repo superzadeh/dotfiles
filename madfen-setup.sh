@@ -5,6 +5,8 @@ sudo apt-get -y install mednafen libsdl2-dev
 # Run the app once to allow it to create its config
 timeout 15s mednafen
 sed -i 's/video.driver opengl/video.driver sdl/g' $HOME/.mednafen/mednafen-09x.cfg
+sed -i 's/sound.device default/sound.device sexyal-literal-default/g' $HOME/.mednafen/mednafen-09x.cfg
+
 
 # Configure GBA
 sed -i 's/gba.xscalefs 1.000000/gba.xscalefs 2.000000/g' $HOME/.mednafen/mednafen-09x.cfg
