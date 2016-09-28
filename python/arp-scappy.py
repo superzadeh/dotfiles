@@ -11,6 +11,8 @@ from os import geteuid
 from sys import argv, exit
 from argparse import ArgumentParser
 
+IP_FORWARD = '/proc/sys/net/ipv4/ip_forward'
+
 def arp_mitm(interface, target, interval=10.0):
 	"""ARP cache poisoning attack"""
 
