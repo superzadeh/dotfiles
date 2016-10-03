@@ -3,7 +3,7 @@
 sudo echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # Install tools
-sudo apt-get install bpython python python-dev python-pip tcpdump nmap python-twisted-web aircrack-ng
+sudo apt-get install -y bpython python python-dev python-pip tcpdump nmap python-twisted-web aircrack-ng
 
 # Install Python modules/libs
 sudo pip install scapy argparse
