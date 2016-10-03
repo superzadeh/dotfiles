@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/bash
 
 # Install prerequisites
 sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
