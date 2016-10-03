@@ -1,5 +1,7 @@
 # DotFiles
 
+If you are looking for my PocketCHIP dotfiles, checkout the ["chip" branch](https://github.com/superzadeh/dotfiles/tree/chip).
+
 ## What it does
 
 Configure Bash (on Ubuntu on Windows) for web development using VIM.
