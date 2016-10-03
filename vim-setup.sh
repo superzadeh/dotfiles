@@ -5,7 +5,7 @@ sudo apt-get install -y libncurses5-dev libgnome2-dev libgnomeui-dev \
     python3-dev ruby-dev lua5.1 lua5.1-dev git
 
 # Remove previous VIM installations
-sudo apt-get remove vim vim-runtime gvim
+sudo apt-get remove -y vim vim-runtime gvim
 
 # Clone and build vim
 cd ~
