@@ -4,6 +4,7 @@ cd $HOME
 sudo curl -O https://storage.googleapis.com/golang/go1.7.1.linux-amd64.tar.gz
 # Unzip and Install Go
 sudo tar -xvf go1.7.1.linux-amd64.tar.gz
+sudo rf -rf /usr/local/go
 sudo mv go /usr/local
 
 # Set Go Path
