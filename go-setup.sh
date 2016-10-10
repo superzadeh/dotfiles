@@ -1,11 +1,10 @@
-cd $HOME
-
 # Download go
-sudo curl -O https://storage.googleapis.com/golang/go1.7.1.linux-amd64.tar.gz
-# Unzip and Install Go
-sudo tar -xvf go1.7.1.linux-amd64.tar.gz
-sudo rf -rf /usr/local/go
-sudo mv go /usr/local
+sudo cd usr/local/
+git clone https://go.googlesource.com/go
+cd go
+git checkout go1.7.1
+cd src
+./all.bash
 
 # Set Go Path
 sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
@@ -14,6 +13,3 @@ sudo echo 'export PATH=$PATH:$GOROOT/bin' >> ~/.profile
 mkdir -p Go
 sudo echo 'export GOPATH=$HOME/Go' >> ~/.profile
 source ~/.profile
-
-# Cleanup
-rm go1.7.1.linux-amd64.tar.gz
