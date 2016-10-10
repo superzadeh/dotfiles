@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get -y install ssh zsh nodejs build-essential git xclip htop vtop cmus fuck wavemon
+sudo apt-get -y install ssh fish nodejs build-essential git xclip htop vtop cmus fuck wavemon
 
 # -------------------------------------
 # Git Configuration
@@ -20,7 +20,7 @@ chmod +x ./bootstrap.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # Start VIM and install plugins
 vim +PluginInstall +qall
-# Fix keymapping for "minus" and "plus" in zsh
+# Fix keymapping for "minus" and "plus"
 sed -i 's/keycode 82 = KP_Subtract underscore F11 KP_Subtract/keycode 82 = minus underscore F11 minus/g'  $HOME/.Xmodmap
 sed -i 's/keycode 86 = KP_Add KP_Equal F12 KP_Add/keycode 86 = plus equal F12 plus/g' $HOME/.Xmodmap
 xmodmap $HOME/.Xmodmap
