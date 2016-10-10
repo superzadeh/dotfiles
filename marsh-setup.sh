@@ -16,3 +16,4 @@ cat ~/.pocket-home/package.txt | tail -1 > ~/.pocket-home/link
     sudo dpkg -i ~/.pocket-home/package.deb && \
     echo 'Installation finished.')
 
+cp $HOME/dotfiles/Radpack_PocketChip.jpg /home/chip/Pictures/Radpack_PocketChip.jpg
