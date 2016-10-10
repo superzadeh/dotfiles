@@ -1,5 +1,5 @@
 # Download go
-sudo cd usr/local/
+cd usr/local/
 git clone https://go.googlesource.com/go
 cd go
 git checkout go1.7.1
