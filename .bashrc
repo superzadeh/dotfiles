@@ -2,9 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# Launch Zsh
+# Launch fish
 if [ -t 1 ]; then
-#exec fish
+  exec fish
 fi
 
 # If not running interactively, don't do anything
