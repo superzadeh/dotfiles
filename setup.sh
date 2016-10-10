@@ -1,7 +1,7 @@
 echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' > /etc/apt/sources.list.d/fish.list 
 sudo apt-get update
-sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon
-sudo apt-get -y install fish
+sudo apt-get upgrade
+sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish
 
 # -------------------------------------
 # Git Configuration
@@ -31,8 +31,8 @@ xmodmap $HOME/.Xmodmap
 # Install Mednafen
 # -------------------------------------
 cd $HOME/dotfiles
-chmod +x ./madfen-setup.sh
-./madfen-setup.sh
+chmod +x ./mednafen-setup.sh
+./mednafen-setup.sh
 
 # -------------------------------------
 # Start Marshmallow's Pocket Home installation, thanks to https://gist.github.com/kevinkn/52a8fb5d670bfa40c766e5fb3c2a0696
@@ -45,6 +45,5 @@ chmod +x ./marsh-setup.sh
  chmod +x ./doom-setup.sh
 ./doom-setup.sh
 
- echo "Rebooting now."
-
-reboot
+# Set fish as default prompt
+chsh -s `which fish`
