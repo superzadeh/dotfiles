@@ -30,6 +30,8 @@ I will add more logs and instructions in the scripts later.
 
 - [ ] Rename madfen to mednafen :)
 - [ ] Remove the need to reboot
+- [ ] Add GO and Go tools (httpstat, borg, vuls, micro, mylg)
+- [ ] More Linux tools: htop/vtop, cmus, fuck, wavemon
 - [ ] Allow users to choose their username/email for git
 - [ ] Automate VIM build with python and Ruby support
 - [ ] Add script to setup OpenTyrian
