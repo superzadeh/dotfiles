@@ -11,6 +11,8 @@ Install all you need on a brand new PocketCHIP:
 - ZSH & oh-my-zsh (with the theme [Nodeys](https://github.com/marszall87/nodeys-zsh-theme))
 - VIM configured for web development (on going)
 - Configure Git with my Username and Email 
+- Build essentials
+- Some useful Linux tools: htop, vtop, cmus, fuck, wavemon
 
 ## How to use 
 
