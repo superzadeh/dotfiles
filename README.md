@@ -11,6 +11,8 @@ Install all you need on a brand new PocketCHIP:
 - ZSH & oh-my-zsh (with the theme [Nodeys](https://github.com/marszall87/nodeys-zsh-theme))
 - VIM configured for web development (on going)
 - Configure Git with my Username and Email 
+- Build essentials
+- Some useful Linux tools: htop, vtop, cmus, fuck, wavemon
 
 ## How to use 
 
@@ -29,9 +31,9 @@ I will add more logs and instructions in the scripts later.
 ## Todo
 
 - [ ] Rename madfen to mednafen :)
-- [ ] Remove the need to reboot
+- [X] Remove the need to reboot
 - [ ] Add GO and Go tools (httpstat, borg, vuls, micro, mylg)
-- [ ] More Linux tools: htop/vtop, cmus, fuck, wavemon
+- [X] More Linux tools: htop/vtop, cmus, fuck, wavemon
 - [ ] Allow users to choose their username/email for git
 - [ ] Automate VIM build with python and Ruby support
 - [ ] Add script to setup OpenTyrian
