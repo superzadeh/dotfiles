@@ -4,7 +4,7 @@
 
 # Launch Zsh
 if [ -t 1 ]; then
-exec zsh
+#exec fish
 fi
 
 # If not running interactively, don't do anything
