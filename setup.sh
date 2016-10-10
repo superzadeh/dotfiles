@@ -1,5 +1,7 @@
+echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' > /etc/apt/sources.list.d/fish.list 
 sudo apt-get update
-sudo apt-get -y install ssh fish nodejs build-essential git xclip htop vtop cmus fuck wavemon
+sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon
+sudo apt-get -y install fish
 
 # -------------------------------------
 # Git Configuration
