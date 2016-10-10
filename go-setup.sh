@@ -8,11 +8,11 @@ sudo rm -rf /usr/local/go
 sudo mv go /usr/local
 
 # Set Go Path
-sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
-sudo echo 'export GOROOT=$HOME/go' >> ~/.profile
-sudo echo 'export PATH=$PATH:$GOROOT/bin' >> ~/.profile
+sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+sudo echo 'export GOROOT=$HOME/go' >> ~/.bashrc
+sudo echo 'export PATH=$PATH:$GOROOT/bin' >> ~/.bashrc
 mkdir -p Go
-sudo echo 'export GOPATH=$HOME/Go' >> ~/.profile
+sudo echo 'export GOPATH=$HOME/Go' >> ~/.bashrc
 source ~/.profile
 
 # Cleanup
