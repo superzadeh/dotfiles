@@ -3,6 +3,9 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish xinput-calibrator
 
+# Bootstrap the dotfiles
+./bootstrap.sh
+
 # -------------------------------------
 # Git Configuration
 # -------------------------------------
