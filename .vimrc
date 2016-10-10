@@ -26,24 +26,13 @@ Plugin 'TernJS/tern'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 " Give a shortcut key to NERD Tree
 map <C-n> :NERDTreeToggle<CR>
-"Show hidden files in NerdTree
+" Show hidden files in NerdTree
 let NERDTreeShowHidden=1
 
-"autopen NERDTree and focus cursor in new document
-autocmd VimEnter * NERDTree
+" autostart ctrlp
 autocmd VimEnter * wincmd p
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -75,8 +64,8 @@ nmap <leader>w :w!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+" Set 5 lines to the cursor - when moving vertically using j/k
+set so=5
 
 " Turn on the WiLd menu
 set wildmenu
@@ -121,12 +110,6 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
-
 " Set line numbering
 set nu
 
@@ -137,21 +120,6 @@ set nu
 syntax enable
 set background=dark
 colorscheme desert
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions-=T
-        set guioptions+=e
-            set t_Co=256
-              set guitablabel=%M\ %t
-                endif
-
-                " Set utf8 as standard encoding
-                set encoding=utf8
-
-                " Use Unix as the standard file type
-                set ffs=unix,dos,mac
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
@@ -166,4 +134,4 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:javascript_plugin_jsdoc = 1
 set foldmethod=indent
-set foldlevel=99
+set foldlevel=50
