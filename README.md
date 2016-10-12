@@ -6,9 +6,8 @@ Install all you need on a brand new PocketCHIP:
 
 - Doom
 - Marshmallow's PocketHome
-- DWB (web-kit browser)
 - Mednafen (emulator)
-- ZSH & oh-my-zsh (with the theme [Nodeys](https://github.com/marszall87/nodeys-zsh-theme))
+- Fish
 - VIM configured for web development (on going)
 - Configure Git with my Username and Email 
 - Build essentials
