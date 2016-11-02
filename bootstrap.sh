@@ -6,6 +6,7 @@ files=".bashrc .vimrc .vim .profile .zshrc"     # list of files/folders to symli
 
 ##########  
 
+wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
 
 # create dotfiles_old in homedir 
 echo "Creating $olddir for backup of any existing dotfiles in ~" 
