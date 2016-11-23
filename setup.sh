@@ -1,7 +1,7 @@
 echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/2/Debian_8.0/ /' > /etc/apt/sources.list.d/fish.list 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish xinput-calibrator
+sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish xinput-calibrator bluez-tools pulseaudio-module-bluetooth wget gnome-maplyer
 
 # Bootstrap the dotfiles
 ./bootstrap.sh
@@ -44,9 +44,17 @@ cd $HOME/dotfiles
 chmod +x ./marsh-setup.sh
 ./marsh-setup.sh
 
+# -------------------------------------
+# Install Doom
+# -------------------------------------
  cd $HOME/dotfiles
  chmod +x ./doom-setup.sh
 ./doom-setup.sh
+
+# -------------------------------------
+# Setup bluetooth
+# -------------------------------------
+wget https://bogdziewicz.xyz/files/pchip/bt.py
 
 # Set fish as default prompt
 chsh -s `which fish`
