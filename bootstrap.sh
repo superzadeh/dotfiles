@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ########## Variables  
 
 dir=~/dotfiles                    		# dotfiles directory 
