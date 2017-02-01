@@ -6,7 +6,9 @@ files=".bashrc .vimrc .vim .profile .zshrc"     # list of files/folders to symli
 
 ##########  
 
-wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
+# Shells
+sudo apt-get install zsh fish -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # create dotfiles_old in homedir 
 echo "Creating $olddir for backup of any existing dotfiles in ~" 
@@ -28,3 +30,9 @@ done
 
 source ~/.bashrc 
 source ~/.vimrc
+
+# VIM
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Themes
+wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
