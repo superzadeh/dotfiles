@@ -6,8 +6,11 @@ files=".bashrc .vimrc .vim .profile .zshrc"     # list of files/folders to symli
 
 ##########  
 
+sudo apt-get update
+
 # Shells
-sudo apt-get install zsh fish -y
+sudo apt-get install -y zsh fish python3-dev python3-pip
+sudo -H pip3 install thefuck
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # create dotfiles_old in homedir 
