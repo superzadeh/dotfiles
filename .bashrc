@@ -121,3 +121,4 @@ fi
 alias cls=clear
 alias q=exit
 alias quit=exit
+eval "$(thefuck --alias)"
