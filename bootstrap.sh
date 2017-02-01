@@ -34,6 +34,10 @@ done
 source ~/.bashrc 
 source ~/.vimrc
 
+# Handle fish.config
+mv ~/.config/fish/config.fish ~/dotfiles_old/     
+ln -s ~/$dir/fish.config ~/.config/fish/config.fish
+
 # VIM
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
