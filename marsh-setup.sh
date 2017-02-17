@@ -1,19 +1,6 @@
-mkdir ~/.pocket-home/
-for i in ~/.pocket-home/version ~/.pocket-home/package.txt ~/.pocket-home/link ~/.pocket-home/.version
-    do touch $i && chmod +w $i
-done
-echo 'Downloading new package link'
-wget  -O ~/.pocket-home/package.txt 'https://drive.google.com/uc?export=download&id=0B1jRc4IqT9kiSVVIOE8wd2w4Zkk' &&\
-echo 'Checking if new version is available'
-cat ~/.pocket-home/package.txt | head -1 > ~/.pocket-home/version
-cat ~/.pocket-home/package.txt | tail -1 > ~/.pocket-home/link
-(diff ~/.pocket-home/version ~/.pocket-home/.version && echo 'Already up-to-date.') || \
-    (echo 'Updating...' && \
-    mkdir -p ~/.pocket-home/ && \
-    cp ~/.pocket-home/version ~/.pocket-home/.version &&\
-    rm -f ~/.pocket-home/package.deb && \
-    wget  -O ~/.pocket-home/package.deb -i ~/.pocket-home/link && \
-    sudo dpkg -i ~/.pocket-home/package.deb && \
-    echo 'Installation finished.')
-
-cp $HOME/dotfiles/Radpack_PocketChip.jpg /home/chip/Pictures/Radpack_PocketChip.jpg
+sudo apt-get install apt-transport-https
+echo "deb https://o-marshmallow.github.io/PocketCHIP-pocket-home/archive/ jessie main" | sudo tee /etc/apt/sources.list.d/marshmallow-pocket-chip-home.list
+sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 584F7F9F
+echo -e "Package: pocket-home\nPin: version *\nPin-Priority: 1050" | sudo tee /etc/apt/preferences.d/unpin-pocket-home.pref
+sudo apt-get update
+sudo apt-get install pocket-home
