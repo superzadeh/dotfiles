@@ -28,3 +28,6 @@ sudo make install
 sudo apt-get install checkinstall
 cd vim
 sudo checkinstall
+
+# DL and setup spacevim
+curl -sLf https://spacevim.org/install.sh | bash
