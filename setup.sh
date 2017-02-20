@@ -1,6 +1,9 @@
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish xinput-calibrator bluez-tools pulseaudio-module-bluetooth wget gnome-maplyer
+sudo apt-get -y install ssh nodejs build-essential git xclip htop vtop cmus fuck wavemon fish xinput-calibrator bluez-tools pulseaudio-module-bluetooth wget gnome-maplyer python3-dev python3-pip
+sudo -H pip3 install thefuck
+
+echo 'thefuck --alias | source' > ~/.config/fish/config.fish
 
 # Bootstrap the dotfiles
 ./bootstrap.sh
