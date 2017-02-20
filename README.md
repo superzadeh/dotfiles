@@ -29,12 +29,12 @@ I will add more logs and instructions in the scripts later.
 
 ## Todo
 
-- [ ] Rename madfen to mednafen :)
+- [x] Rename madfen to mednafen :)
 - [X] Remove the need to reboot
 - [ ] Add GO and Go tools (httpstat, borg, vuls, micro, mylg)
 - [X] More Linux tools: htop/vtop, cmus, fuck, wavemon
 - [ ] Allow users to choose their username/email for git
-- [ ] Automate VIM build with python and Ruby support
+- [x] Automate VIM build with python and Ruby support
 - [ ] Add script to setup OpenTyrian
 - [ ] Automate the icons creation in the launcher using jq to manipulate the ~/pocket-home/config.json
 - [ ] Move git apt-get and clone inside the script, and change the instructions to simple wget/curl and run setup.sh
