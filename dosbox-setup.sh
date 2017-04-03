@@ -20,4 +20,10 @@ unzip wolfenstein-3d.zip
 wget http://www.bestoldgames.net/download/bgames/golden-axe.zip
 unzip golden-axe.zip
 
+wget http://www.bestoldgames.net/download/bgames/gobliiins.zip
+unzip gobliiins.zip
+
+wget http://www.bestoldgames.net/download/bgames/gobliins-2.zip
+unzip gobliins-2.zip
+
 cd
