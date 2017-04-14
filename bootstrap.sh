@@ -4,7 +4,7 @@
 
 dir=~/dotfiles                    		# dotfiles directory 
 olddir=~/dotfiles_old             		# old dotfiles backup directory 
-files=".bashrc .vimrc .vim .profile .zshrc"     # list of files/folders to symlink in homedir  
+files=".bashrc .profile .zshrc"     # list of files/folders to symlink in homedir  
 
 ##########  
 
@@ -34,14 +34,14 @@ for file in $files; do
 done  
 
 source ~/.bashrc 
-source ~/.vimrc
 
 # Handle fish.config
 mv ~/.config/fish/config.fish ~/dotfiles_old/     
 ln -s ~/$dir/fish.config ~/.config/fish/config.fish
 
 # VIM
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+curl -sLf https://spacevim.org/install.sh | bash
+source ~/.vimrc
 
 # Themes
 wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
