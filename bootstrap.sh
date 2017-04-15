@@ -48,4 +48,4 @@ curl -sLf https://spacevim.org/install.sh | bash
 source ~/.vimrc
 
 # Themes
-wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
+sudo wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme ~/.oh-my-zsh/themes/nodeys.zsh-theme
