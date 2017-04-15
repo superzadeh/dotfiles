@@ -50,3 +50,7 @@ source ~/.vimrc
 # Themes
 sudo wget https://raw.githubusercontent.com/marszall87/nodeys-zsh-theme/master/nodeys.zsh-theme
 mv  nodeys.zsh-theme ~/.oh-my-zsh/themes
+
+# NodeJS
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
